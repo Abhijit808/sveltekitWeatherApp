@@ -2,7 +2,7 @@ import type { Fivedayforecast } from '$lib/types/FivedayWeatherType';
 import type { Weathertype } from '$lib/types/Weathertype';
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
-export const prerender = true;
+
 export const load = (async ({ fetch, params }) => {
 	let navError = false;
 	let currentWeather: Weathertype | null = null;
