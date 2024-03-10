@@ -5,7 +5,7 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				main: "url('./src/lib/assets/unsplash_FIKD9t5_5zQ.svg')"
+				main: "url('./static/unsplash_FIKD9t5_5zQ.svg')"
 			},
 			flex: {
 				2: '0 0 100%'

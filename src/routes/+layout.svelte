@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import type { placetype } from '$lib/types/Placetypes';
-
+	import bgimg from '$lib/assets/unsplash_FIKD9t5_5zQ.svg';
 	import { latitide } from '$lib/store/store';
 	import { goto } from '$app/navigation';
 	let searchcity: string = '';
@@ -44,7 +44,8 @@
 </script>
 
 <main
-	class="relative flex min-h-screen flex-col items-center gap-1 bg-main bg-cover bg-center bg-no-repeat"
+	style="background-image: url({bgimg});"
+	class="relative flex min-h-screen flex-col items-center gap-1 bg-cover bg-center bg-no-repeat"
 	on:dblclick={handledblclick}
 >
 	<nav class="flex w-full flex-col items-center justify-center bg-white/30 p-2 backdrop-blur-xl">
