@@ -20,7 +20,7 @@
 		if (searchcity.length > 0) {
 			try {
 				const fetchCoordinates = await fetch(
-					`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${import.meta.env.VITE_OPENWEATHERAPI_KEY}`
+					`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${import.meta.env.VITE_OPENWEATHERAPI_KEY}`
 				);
 				const Coordinates = await fetchCoordinates.json();
 				places = [];
